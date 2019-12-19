@@ -151,16 +151,14 @@ public class TrackerService extends Service implements LocationListener {
         Seconds = (int) (UpdateTime / 1000);
         Minutes = Seconds / 60;
         Seconds = Seconds % 60;
-        //doCallbacks(locationSum);
+        doCallbacks(locationSum);
 
-        /*
+
         try {
           Thread.sleep(1000);
         } catch (InterruptedException e) {
           Log.d("runningTracker", "run: " + e.toString());
         }
-
-         */
       }
     }
   }
